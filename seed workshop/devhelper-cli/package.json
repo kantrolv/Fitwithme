@@ -1,0 +1,33 @@
+{
+    "name": "devhelper-cli",
+    "version": "1.0.0",
+    "description": "A fully functional CLI tool for developers built with Node.js and TypeScript",
+    "main": "dist/index.js",
+    "bin": {
+        "devhelper": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "ts-node src/index.ts",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [
+        "cli",
+        "developer",
+        "tools",
+        "typescript"
+    ],
+    "author": "DevHelper",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.6.7",
+        "chalk": "^4.1.2",
+        "commander": "^12.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.20",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}
